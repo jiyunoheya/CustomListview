@@ -1,0 +1,15 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" ctype="Workspace" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Main.cs" ctype="Workbench">
+    <Files>
+      <File FileName="Main.cs" Line="17" Column="74" />
+      <File FileName="ScrollbarTestForm.cs" Line="8" Column="1" />
+      <File FileName="AssemblyInfo.cs" Line="1" Column="1" />
+      <File FileName="ScrollbarTestForm.Designer.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches ctype="PinnedWatchStore" />
+</Properties>

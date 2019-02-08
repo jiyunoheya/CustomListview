@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{44B9755D-4648-4A21-BCE0-FAEDA20D7CC1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CustomListview</RootNamespace>
+    <AssemblyName>CustomListview</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Ui\Controls\Scrollbar\CustomScrollbar.cs" />
+    <Compile Include="Ui\Controls\Scrollbar\ICustomScrollbar.cs" />
+    <Compile Include="Ui\Controls\Scrollbar\ScrollbarCollector.cs" />
+    <Compile Include="Ui\Controls\Scrollbar\ScrollbarStyleHelper.cs" />
+    <Compile Include="Ui\Controls\CustomListView.cs" />
+    <Compile Include="Ui\Painters\ButtonPainters.cs" />
+    <Compile Include="Ui\Painters\Painter.cs" />
+    <Compile Include="Ui\Painters\PainterFilterNoText.cs" />
+    <Compile Include="Ui\Painters\PainterFilterSize.cs" />
+    <Compile Include="Ui\Painters\StackedPainters.cs" />
+    <Compile Include="Ui\Painters\SymbolPainter.cs" />
+    <Compile Include="Ui\Painters\WindowsStyledButtonPainter.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
